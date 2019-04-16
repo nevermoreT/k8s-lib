@@ -56,3 +56,5 @@ ENV PATH="/root/miniconda3/bin:${PATH}"
 #Add Requirement Packages 
 RUN conda install pytorch torchvision cudatoolkit=8.0 -c pytorch && \
     conda clean -all --yes
+RUN conda install pandas scikit-learn   
+RUN pip install progressbar
